@@ -1,0 +1,94 @@
+{
+  "name": "qiaomu-publish-dsh",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Qiaomu Publish for DeepSeek Harness",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22",
+    "dsh": ">=0.2.1-rc.3 <0.3.0"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json"
+  },
+  "icon": "./icon.svg",
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "icon.svg",
+    "locale",
+    "LICENSE",
+    "THIRD_PARTY_NOTICES.md"
+  ],
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "node --import tsx --test tests/*.test.mjs && vitest run tests/upstream --maxWorkers=2",
+    "check": "npm test && npm run build && node scripts/check-package.mjs",
+    "prepack": "npm run build && node scripts/check-package.mjs"
+  },
+  "devDependencies": {
+    "@codemirror/commands": "6.11.1",
+    "@codemirror/lang-markdown": "6.5.2",
+    "@codemirror/state": "6.7.6",
+    "@codemirror/view": "6.43.15",
+    "dompurify": "3.4.17",
+    "esbuild": "0.28.1",
+    "happy-dom": "20.14.5",
+    "highlight.js": "11.11.1",
+    "jsdom": "29.1.1",
+    "lucide": "1.47.0",
+    "lucide-react": "1.47.0",
+    "marked": "18.1.2",
+    "marked-footnote": "1.4.0",
+    "mathjax-full": "3.2.2",
+    "mermaid": "12.2.0",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "tsx": "4.20.6",
+    "turndown": "7.2.2",
+    "turndown-plugin-gfm": "1.0.2",
+    "vitest": "5.0.5",
+    "yaml": "2.9.1"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "~4.0.5",
+    "@deepseek-ai/dsh-typert-protocol": "0.2.1-rc.2"
+  },
+  "peerDependenciesMeta": {
+    "@deepseek-ai/cordis": {
+      "optional": true
+    },
+    "@deepseek-ai/dsh-typert-protocol": {
+      "optional": true
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/joeseesun/qiaomu-publish-dsh.git"
+  },
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "qiaomu",
+    "publish"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": []
+    },
+    "meta": {
+      "title": "\u4e54\u6728\u6392\u7248",
+      "description": "Qiaomu Publish for DeepSeek Harness"
+    }
+  }
+}
