@@ -1,3 +1,4 @@
+import packageInfo from '../package.json' with { type: 'json' };
 import {Modal,Notice} from './harness-ui';
 import {normalizeSettings} from './original/defaults';
 import {WechatPublishModal} from './original/publish-modal';
@@ -6,10 +7,10 @@ import {QiaomuPublishSettingTab} from './original/settings-tab';
 import {UpdateNotes} from './original/update-notes';
 
 export class PublishController {
- settings:any;manifest={id:'qiaomu-publish-dsh',version:'0.1.0',name:'乔木 Publish'};modals=new Set<any>();listeners=new Set<()=>void>();disposers:Array<()=>void>=[];commands:any[]=[];updateNotes:any;
+ settings:any;manifest={id:'qiaomu-publish-dsh',version:packageInfo.version,name:'乔木 Publish'};modals=new Set<any>();listeners=new Set<()=>void>();disposers:Array<()=>void>=[];commands:any[]=[];updateNotes:any;
  constructor(public app:any,public state:any,public save:()=>Promise<any>,public saveNote:()=>Promise<any>){
   this.settings=normalizeSettings(state.data.settings);
-  this.updateNotes=new UpdateNotes(this as any,[{version:'0.1.0',items:['harness']}],()=> 'zh');
+  this.updateNotes=new UpdateNotes(this as any,[{version:packageInfo.version,items:['harness']}],()=> 'zh');
  }
  register(fn:()=>void){this.disposers.push(fn);}addCommand(command:any){this.commands.push(command);}
  async saveSettings(){this.state.data.settings=normalizeSettings(this.settings);await this.save();for(const fn of this.listeners)fn();}

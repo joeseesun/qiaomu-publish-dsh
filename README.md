@@ -1,5 +1,7 @@
 # 乔木 Publish · DeepSeek Harness
 
+> v0.1.1：DeepSeek Harness **0.2.1-rc.3** 兼容更新。[本次验证范围](docs/RC3-COMPATIBILITY.md)。
+
 [English](README.en.md)
 
 把 Markdown 笔记排成公众号文章、X 文章、知乎草稿和小红书图文。直接复用原版 Qiaomu Publish 的预览、42 个主题、排版控件、封面编辑与发布窗口。
@@ -19,13 +21,13 @@
 
 ## 安装
 
-要求 DeepSeek Harness `0.2.1-rc.3`（`<0.3.0`），Node.js 22 或更新版本。
+要求 DeepSeek Harness `0.2.1-rc.3`，Node.js 22 或更新版本。
 
 1. 从 [Releases](https://github.com/joeseesun/qiaomu-publish-dsh/releases) 下载 tgz 和 SHA256SUMS，核对摘要。
 2. 在 Harness 插件管理安装本地 tgz，或执行：
 
 ```sh
-dsh plugin --profile desktop add /absolute/path/qiaomu-publish-dsh-0.1.0.tgz
+dsh plugin --profile desktop add /absolute/path/qiaomu-publish-dsh-0.1.1.tgz
 ```
 
 打开侧栏「乔木排版」。不需要连接任何发布账号即可编辑、排版和导出。
