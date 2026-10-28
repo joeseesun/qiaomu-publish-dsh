@@ -1,13 +1,13 @@
 {
   "name": "qiaomu-publish-dsh",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "type": "module",
   "description": "Qiaomu Publish for DeepSeek Harness",
   "license": "MIT",
   "engines": {
     "node": ">=22",
-    "dsh": ">=0.2.1-rc.3 <0.3.0"
+    "dsh": "0.2.1-rc.3"
   },
   "exports": {
     ".": "./index.js",
@@ -57,7 +57,7 @@
   },
   "peerDependencies": {
     "@deepseek-ai/cordis": "~4.0.5",
-    "@deepseek-ai/dsh-typert-protocol": "0.2.1-rc.2"
+    "@deepseek-ai/dsh-typert-protocol": "0.2.1-rc.3"
   },
   "peerDependenciesMeta": {
     "@deepseek-ai/cordis": {
@@ -87,7 +87,7 @@
       "inject": []
     },
     "meta": {
-      "title": "\u4e54\u6728\u6392\u7248",
+      "title": "乔木排版",
       "description": "Qiaomu Publish for DeepSeek Harness"
     }
   }

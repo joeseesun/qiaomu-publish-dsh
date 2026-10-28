@@ -1,5 +1,7 @@
 # Qiaomu Publish for DeepSeek Harness
 
+> v0.1.1: DeepSeek Harness **0.2.1-rc.3** compatibility update. [Release verification](docs/RC3-COMPATIBILITY.md).
+
 [中文](README.md)
 
 Format Markdown for WeChat, X Articles, Zhihu and Xiaohongshu using the original Qiaomu Publish UI: live preview, 42 themes, per-note typography, cover design/cropping and publishing dialogs.
@@ -13,7 +15,7 @@ Includes Markdown files and attachments, draft recovery, conflict-aware saves, r
 Requires DeepSeek Harness `0.2.1-rc.3` (`<0.3.0`) and Node.js 22+. Download the tgz and SHA256SUMS from [Releases](https://github.com/joeseesun/qiaomu-publish-dsh/releases), verify the digest, then install with the plugin manager or:
 
 ```sh
-dsh plugin --profile desktop add /absolute/path/qiaomu-publish-dsh-0.1.0.tgz
+dsh plugin --profile desktop add /absolute/path/qiaomu-publish-dsh-0.1.1.tgz
 ```
 
 Open Qiaomu Publish in the sidebar. Editing and exporting do not require publishing accounts.
