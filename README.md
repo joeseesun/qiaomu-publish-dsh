@@ -1,6 +1,6 @@
 # 乔木 Publish · DeepSeek Harness
 
-> v0.1.1：DeepSeek Harness **0.2.1-rc.3** 兼容更新。[本次验证范围](docs/RC3-COMPATIBILITY.md)。
+> v0.1.2：DeepSeek Harness **0.2.1-rc.3** 兼容更新。[本次验证范围](docs/RC3-COMPATIBILITY.md)。
 
 [English](README.en.md)
 
@@ -27,7 +27,7 @@
 2. 在 Harness 插件管理安装本地 tgz，或执行：
 
 ```sh
-dsh plugin --profile desktop add /absolute/path/qiaomu-publish-dsh-0.1.1.tgz
+dsh plugin --profile desktop add /absolute/path/qiaomu-publish-dsh-0.1.2.tgz
 ```
 
 打开侧栏「乔木排版」。不需要连接任何发布账号即可编辑、排版和导出。
