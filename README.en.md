@@ -1,6 +1,6 @@
 # Qiaomu Publish for DeepSeek Harness
 
-> v0.1.1: DeepSeek Harness **0.2.1-rc.3** compatibility update. [Release verification](docs/RC3-COMPATIBILITY.md).
+> v0.1.2: DeepSeek Harness **0.2.1-rc.3** compatibility update. [Release verification](docs/RC3-COMPATIBILITY.md).
 
 [中文](README.md)
 
@@ -15,7 +15,7 @@ Includes Markdown files and attachments, draft recovery, conflict-aware saves, r
 Requires DeepSeek Harness `0.2.1-rc.3` (`<0.3.0`) and Node.js 22+. Download the tgz and SHA256SUMS from [Releases](https://github.com/joeseesun/qiaomu-publish-dsh/releases), verify the digest, then install with the plugin manager or:
 
 ```sh
-dsh plugin --profile desktop add /absolute/path/qiaomu-publish-dsh-0.1.1.tgz
+dsh plugin --profile desktop add /absolute/path/qiaomu-publish-dsh-0.1.2.tgz
 ```
 
 Open Qiaomu Publish in the sidebar. Editing and exporting do not require publishing accounts.
@@ -45,3 +45,5 @@ npm pack
 `node scripts/qa-cards.mjs` builds the local card export harness in `build/cards-qa`.
 
 MIT. Adapted from [qiaomu-publish](https://github.com/joeseesun/qiaomu-publish), commit `4fbeae30017e1db4be95b7454620b30eae47ada8`. Product CSS is unchanged; native boundaries and dark-content readability fixes are documented. See [dependency/font notices](THIRD_PARTY_NOTICES.md).
+
+See the [Harness rc.5 compatibility record](docs/RC5-COMPATIBILITY.md) for tested paths and limitations.
