@@ -45,3 +45,5 @@ npm pack
 `node scripts/qa-cards.mjs` builds the local card export harness in `build/cards-qa`.
 
 MIT. Adapted from [qiaomu-publish](https://github.com/joeseesun/qiaomu-publish), commit `4fbeae30017e1db4be95b7454620b30eae47ada8`. Product CSS is unchanged; native boundaries and dark-content readability fixes are documented. See [dependency/font notices](THIRD_PARTY_NOTICES.md).
+
+See the [Harness rc.5 compatibility record](docs/RC5-COMPATIBILITY.md) for tested paths and limitations.

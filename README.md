@@ -63,3 +63,5 @@ npm pack
 浏览器卡片验收页：`node scripts/qa-cards.mjs`，随后在 `build/cards-qa` 启动本地静态服务器。
 
 MIT。原始代码来自 [qiaomu-publish](https://github.com/joeseesun/qiaomu-publish) 的 `4fbeae30017e1db4be95b7454620b30eae47ada8`。产品 CSS 保持字节一致；宿主边界与两项深色可读性修复有记录。依赖与字体许可证见 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。
+
+本次 Harness rc.5 支持范围与实测边界见 [兼容验证记录](docs/RC5-COMPATIBILITY.md)。
