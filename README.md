@@ -1,6 +1,6 @@
 # 乔木 Publish · DeepSeek Harness
 
-> v0.1.2：DeepSeek Harness **0.2.1-rc.3** 兼容更新。[本次验证范围](docs/RC3-COMPATIBILITY.md)。
+> v0.1.3：DeepSeek Harness **0.2.1-rc.3** 兼容更新。[本次验证范围](docs/RC3-COMPATIBILITY.md)。
 
 [English](README.en.md)
 
@@ -27,7 +27,7 @@
 2. 在 Harness 插件管理安装本地 tgz，或执行：
 
 ```sh
-dsh plugin --profile desktop add /absolute/path/qiaomu-publish-dsh-0.1.2.tgz
+dsh plugin --profile desktop add /absolute/path/qiaomu-publish-dsh-0.1.3.tgz
 ```
 
 打开侧栏「乔木排版」。不需要连接任何发布账号即可编辑、排版和导出。
@@ -64,4 +64,4 @@ npm pack
 
 MIT。原始代码来自 [qiaomu-publish](https://github.com/joeseesun/qiaomu-publish) 的 `4fbeae30017e1db4be95b7454620b30eae47ada8`。产品 CSS 保持字节一致；宿主边界与两项深色可读性修复有记录。依赖与字体许可证见 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。
 
-本次 Harness rc.5 支持范围与实测边界见 [兼容验证记录](docs/RC5-COMPATIBILITY.md)。
+Harness 0.2.2-rc.1 适配与实测边界见 [兼容验证记录](docs/DSH-0.2.2-RC1.md)。
