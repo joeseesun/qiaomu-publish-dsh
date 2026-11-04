@@ -1,6 +1,6 @@
 # Qiaomu Publish for DeepSeek Harness
 
-> v0.1.3: DeepSeek Harness **0.2.1-rc.3** compatibility update. [Release verification](docs/RC3-COMPATIBILITY.md).
+> v0.1.3: DeepSeek Harness **0.2.2-rc.1** compatibility update. [Release verification](docs/DSH-0.2.2-RC1.md).
 
 [中文](README.md)
 
@@ -12,7 +12,7 @@ Includes Markdown files and attachments, draft recovery, conflict-aware saves, r
 
 ## Install
 
-Requires DeepSeek Harness `0.2.1-rc.3` (`<0.3.0`) and Node.js 22+. Download the tgz and SHA256SUMS from [Releases](https://github.com/joeseesun/qiaomu-publish-dsh/releases), verify the digest, then install with the plugin manager or:
+Requires DeepSeek Harness `0.2.2-rc.1` and Node.js 24.9+. Download the tgz and SHA256SUMS from [Releases](https://github.com/joeseesun/qiaomu-publish-dsh/releases), verify the digest, then install with the plugin manager or:
 
 ```sh
 dsh plugin --profile desktop add /absolute/path/qiaomu-publish-dsh-0.1.3.tgz
@@ -46,6 +46,4 @@ npm pack
 
 MIT. Adapted from [qiaomu-publish](https://github.com/joeseesun/qiaomu-publish), commit `4fbeae30017e1db4be95b7454620b30eae47ada8`. Product CSS is unchanged; native boundaries and dark-content readability fixes are documented. See [dependency/font notices](THIRD_PARTY_NOTICES.md).
 
-See the [Harness rc.5 compatibility record](docs/RC5-COMPATIBILITY.md) for tested paths and limitations.
-
-Harness 0.2.2-rc.1 compatibility: [validation and supported scope](docs/DSH-0.2.2-RC1.md).
+See the [Harness 0.2.2-rc.1 compatibility record](docs/DSH-0.2.2-RC1.md) for tested paths and limitations.
